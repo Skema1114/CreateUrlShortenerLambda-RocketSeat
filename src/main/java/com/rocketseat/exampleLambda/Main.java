@@ -1,6 +1,6 @@
 package com.rocketseat.exampleLambda;
 
-public class Hello {
+public class Main {
 	public String handleRequest() {
 		return "Hello World";
 	}

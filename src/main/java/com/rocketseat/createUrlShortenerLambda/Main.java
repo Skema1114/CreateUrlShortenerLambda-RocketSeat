@@ -3,6 +3,7 @@ package com.rocketseat.createUrlShortenerLambda;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.rocketseat.shared.models.UrlData;
 import software.amazon.awssdk.core.sync.RequestBody;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.PutObjectRequest;
@@ -10,6 +11,9 @@ import software.amazon.awssdk.services.s3.model.PutObjectRequest;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+
+import static com.rocketseat.shared.configs.Configs.BUCKET_NAME;
+import static com.rocketseat.shared.configs.Configs.BUCKET_TYPE;
 
 public class Main implements RequestHandler<Map<String, Object>, Map<String, Object>> {
 
@@ -39,12 +43,12 @@ public class Main implements RequestHandler<Map<String, Object>, Map<String, Obj
 		try {
 			String urlDataJson = objectMapper.writeValueAsString(urlData);
 
-			PutObjectRequest requestObj = PutObjectRequest.builder()
-					.bucket("url-shortener-storage-rocketseat-lambda-bucket")
-					.key(shortUrlCode + ".json")
+			PutObjectRequest putObjectRequest = PutObjectRequest.builder()
+					.bucket(BUCKET_NAME)
+					.key(shortUrlCode + BUCKET_TYPE)
 					.build();
 
-			s3Client.putObject(requestObj, RequestBody.fromString(urlDataJson));
+			s3Client.putObject(putObjectRequest, RequestBody.fromString(urlDataJson));
 		} catch (Exception exception) {
 			throw new RuntimeException("Error saving data to S3: " + exception.getMessage(), exception);
 		}
