@@ -1,4 +1,4 @@
-package com.rocketseat.createUrlShortnerLambda;
+package com.rocketseat.createUrlShortenerLambda;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;

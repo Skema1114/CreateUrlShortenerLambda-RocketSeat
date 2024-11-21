@@ -1,1 +1,105 @@
-{"_type":"export","__export_format":4,"__export_date":"2024-11-19T20:40:51.433Z","__export_source":"insomnia.desktop.app:v10.1.1","resources":[{"_id":"req_030520ef1f9c412f8a37cdc1e8493700","parentId":"wrk_f8c17541202e433384e5ed3a8dc735b6","modified":1732047780851,"created":1732047343665,"url":"https://cqcyui5lbf7rgtjjxwkke4ibt40wcwxm.lambda-url.eu-central-1.on.aws/","name":"Lambda Url Shortner","description":"","method":"GET","body":{"mimeType":"application/json","text":"{\n\t\"originalUrl\": \"https://www.youtube.com/channel/UCpKvMmsF6QrkVr_zWaLGK-A/join\",\n\t\"expirationTime\": \"1728529200000\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"User-Agent","value":"insomnia/10.1.1"}],"authentication":{},"metaSortKey":-1732047343665,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"wrk_f8c17541202e433384e5ed3a8dc735b6","parentId":null,"modified":1732026084894,"created":1732026084894,"name":"Url Shortner RocketSeat","description":"","scope":"collection","_type":"workspace"},{"_id":"req_2e454c56064a41099f7dfef93abd8e07","parentId":"wrk_f8c17541202e433384e5ed3a8dc735b6","modified":1732047338398,"created":1732026095095,"url":"https://cbzjxtslheuuj6y2x4n4a3t7wm0sszyp.lambda-url.eu-central-1.on.aws/","name":"Lambda Hello World","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"insomnia/10.1.1"}],"authentication":{},"metaSortKey":-1732026095095,"isPrivate":false,"pathParameters":[],"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_b7ebfb002f80f3ed59189aacd7a367dc79e8dc93","parentId":"wrk_f8c17541202e433384e5ed3a8dc735b6","modified":1732026084896,"created":1732026084896,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1732026084896,"_type":"environment"},{"_id":"jar_b7ebfb002f80f3ed59189aacd7a367dc79e8dc93","parentId":"wrk_f8c17541202e433384e5ed3a8dc735b6","modified":1732026084897,"created":1732026084897,"name":"Default Jar","cookies":[],"_type":"cookie_jar"}]}
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-11-19T20:40:51.433Z",
+  "__export_source": "insomnia.desktop.app:v10.1.1",
+  "resources": [
+    {
+      "_id": "req_030520ef1f9c412f8a37cdc1e8493700",
+      "parentId": "wrk_f8c17541202e433384e5ed3a8dc735b6",
+      "modified": 1732047780851,
+      "created": 1732047343665,
+      "url": "https://cqcyui5lbf7rgtjjxwkke4ibt40wcwxm.lambda-url.eu-central-1.on.aws/",
+      "name": "Lambda Url Shortener",
+      "description": "",
+      "method": "GET",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"originalUrl\": \"https://www.youtube.com/channel/UCpKvMmsF6QrkVr_zWaLGK-A/join\",\n\t\"expirationTime\": \"1728529200000\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.1.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732047343665,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_f8c17541202e433384e5ed3a8dc735b6",
+      "parentId": null,
+      "modified": 1732026084894,
+      "created": 1732026084894,
+      "name": "Url Shortener RocketSeat",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_2e454c56064a41099f7dfef93abd8e07",
+      "parentId": "wrk_f8c17541202e433384e5ed3a8dc735b6",
+      "modified": 1732047338398,
+      "created": 1732026095095,
+      "url": "https://cbzjxtslheuuj6y2x4n4a3t7wm0sszyp.lambda-url.eu-central-1.on.aws/",
+      "name": "Lambda Hello World",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/10.1.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732026095095,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_b7ebfb002f80f3ed59189aacd7a367dc79e8dc93",
+      "parentId": "wrk_f8c17541202e433384e5ed3a8dc735b6",
+      "modified": 1732026084896,
+      "created": 1732026084896,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1732026084896,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_b7ebfb002f80f3ed59189aacd7a367dc79e8dc93",
+      "parentId": "wrk_f8c17541202e433384e5ed3a8dc735b6",
+      "modified": 1732026084897,
+      "created": 1732026084897,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
