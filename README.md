@@ -13,16 +13,11 @@
 - **Parâmetros no corpo da requisição:**
   - `originalUrl`: A URL que será encurtada.
   - `expirationTime`: Tempo em segundos para a expiração do encurtamento.
-- **Descrição:** Este endpoint aciona uma função **Lambda** que:
-  - Gera um código único para a URL.
-  - Salva as informações no bucket **S3** da AWS.
-  - Retorna um código (`code`) para acesso à URL encurtada.
+- **Descrição:** Este endpoint aciona uma função **Lambda** que: Gera um código único para a URL, salva as informações no bucket **S3** da AWS e retorna um código (`code`) para acesso à URL encurtada.
 
 ### 2. **Redirecionamento pela URL Encurtada**
 - **GET:** `https://vamcs3awhi.execute-api.eu-central-1.amazonaws.com/{code}`
-- **Descrição:** Este endpoint:
-  - Redireciona o usuário para a URL original associada ao código fornecido.
-  - Se a URL expirar, o redirecionamento não será efetuado.
+- **Descrição:** Este endpoint redireciona o usuário para a URL original associada ao código fornecido e se a URL expirar, o redirecionamento não será efetuado.
 
 ---
 
@@ -45,7 +40,7 @@
 
 ## Requisitos para Configuração
 
-1. **Java** (versão 11 ou superior) instalado no sistema.
+1. **Java** (versão 17 ou superior) instalado no sistema.
 2. Uma conta ativa na **AWS** com permissões para configurar os seguintes serviços:
    - Lambda
    - S3
