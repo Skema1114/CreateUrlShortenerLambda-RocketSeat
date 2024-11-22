@@ -9,7 +9,7 @@
 ## Funcionalidades
 
 ### 1. **Criação de URL Encurtada**
-- **Endpoint:** `POST https://vamcs3awhi.execute-api.eu-central-1.amazonaws.com/create`
+- **POST:** `https://vamcs3awhi.execute-api.eu-central-1.amazonaws.com/create`
 - **Parâmetros no corpo da requisição:**
   - `originalUrl`: A URL que será encurtada.
   - `expirationTime`: Tempo em segundos para a expiração do encurtamento.
@@ -19,7 +19,7 @@
   - Retorna um código (`code`) para acesso à URL encurtada.
 
 ### 2. **Redirecionamento pela URL Encurtada**
-- **Endpoint:** `GET https://vamcs3awhi.execute-api.eu-central-1.amazonaws.com/{code}`
+- **GET:** `https://vamcs3awhi.execute-api.eu-central-1.amazonaws.com/{code}`
 - **Descrição:** Este endpoint:
   - Redireciona o usuário para a URL original associada ao código fornecido.
   - Se a URL expirar, o redirecionamento não será efetuado.
